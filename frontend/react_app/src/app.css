@@ -1,0 +1,203 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .App-header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    margin-bottom: 20px; 
+  }
+  
+  .App-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    transition: all 0.3s ease-in-out; 
+    flex: 1;
+    overflow: hidden;
+  
+  }
+  
+  .left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-right: 2px solid #555;
+  }
+  
+  .hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+  .middle-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px; 
+    transition: border 0.3s ease-in-out; 
+  }
+  
+  input[type="text"]:focus {
+    border-color: #555; 
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 20px; 
+  }
+  
+  /* Styles for the card */
+  .device-card {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #c7ffd8;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .device-card p {
+    font-weight: bold;
+  }
+  
+  /* Error card styles */
+  .device-card.error {
+    border: 2px solid red;
+    background-color: #ffc0c0;
+  }
+  
+  .device-card.error .error-text {
+    color: red;
+  }
+  
+  /* .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+/* .App-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+} */
+
+/* .left-panel {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-right: 1px solid #e1e1e1;
+} */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.response-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid green;
+  background-color: #e6ffe6;
+}
+
+.error-message {
+  color: red;
+}

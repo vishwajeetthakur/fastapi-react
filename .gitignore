@@ -1,0 +1,5 @@
+.env.dev
+__pycache__
+backend/__pycache__
+mysql-data
+frontend/react_app/package-lock.json
